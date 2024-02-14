@@ -1,0 +1,11 @@
+* {
+  font-family: "Barriecito", system-ui;
+}
+
+body {
+  background-image: url(../img/favicon.png);
+}
+.backgroundText {
+  background: white;
+  opacity: 0.9;
+}
