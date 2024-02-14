@@ -41,19 +41,19 @@ function numeroJugadas() {
 
   for (let i = 1; i <= numberPlays; i++) {
     document.write(`<h2>jugada número ${i}</h2>`);
-    const primer = cachuipunUser();
-    const segundo = maquina();
+    const jugador1 = cachuipunUser();
+    const jugadorMaquina = maquina();
     switch (true) {
-      case primer === segundo:
+      case jugador1 === jugadorMaquina:
         document.write(
           `<h1  style='color:blue'>Resultado jugada n°${i}: Empate</h1>`
         );
         machine++;
         user++;
         break;
-      case primer === 2 && segundo === 1:
-      case primer === 1 && segundo === 0:
-      case primer === 0 && segundo === 2:
+      case jugador1 === 2 && jugadorMaquina === 1:
+      case jugador1 === 1 && jugadorMaquina === 0:
+      case jugador1 === 0 && jugadorMaquina === 2:
         document.write(
           `<h1  style='color:green'>Resultado jugada n°${i}: Ganaste</h1>`
         );
